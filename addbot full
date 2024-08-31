@@ -1,0 +1,57 @@
+finished = False
+while finished == False:
+    print("Hi, I am Marvin, your personal code-bot")
+    command = input("How can I help? ")
+    # this section is geting them to add
+    if command == "add" or command == "plus":
+        print("Let's add some numbers")
+        input1 = input("Number 1> ")
+        input2 = input("Number 2> ")
+        number1 = int(input1)
+        number2 = int(input2)
+        result1 = number1 + number2
+        output = str(result1)
+        print(input1 + " + " +input2 + " = " + output)
+    # this section is getting them to divide
+    elif command == "divide":
+        print("Let's divide some numbers.")
+        input3 = input("Number 1> ")
+        input4 = input("Number 2> ")
+        number3 = int(input3)
+        number4 = int(input4)
+        result2 = number3 / number4
+        result2 = round(result2, 3)   # this part is the rounding function
+        output2 = str(result2)
+        print(input3 + " divided by " + input4 + " = " + output2)
+    elif command == "subtraction": # now we are doing subtraction
+        print("Let's subtract some numbers.")
+        input1 = input("Number 1> ")
+        input2 = input("Number 2> ")
+        number1 = int(input1)
+        number2 = int(input2)
+        result = number1 - number2
+        output = str(result)
+        print(input1 + " subtracted from " + input2 + " = " + ouput)
+    elif command == "multiplication" or command == "multiply":
+        print("Let's multiply some numbers.")
+        input1 = input("Number 1> ")
+        input2 = input("Number 2) ")
+        number1 = int(input1)
+        number2 = int(input2)
+        result = number1 * number2
+        output = str(result)
+        print(input1 + " x " + input2 + " = " + output)
+    elif command == "average":
+        how_many = int(input("How many Numbers> "))
+        total = 0
+        for number_count in range(how_many):
+            number = input("Enter number " +str(number_count + 1) + "> ")
+            total = total +int(number)
+        result = total / how_many
+        print("the average is " + str(result))
+    elif command == "bye":
+        finished = True
+    else:  # I forgot that the colon needs to go on the else, then a drop. I'm not sure why that is.
+       print("I'm sorry, I don't understand what you mean.")
+    print("Goodbye")
+
