@@ -1,0 +1,8 @@
+shopping = ["bread", "cheese", "apple", "tomato", "biscuits"]
+count = 0
+for item in shopping:
+    print(item)
+    count = count + 1
+    count1 = str(count)
+print("you have " + count1 + " items in your list")
+len(shopping)
