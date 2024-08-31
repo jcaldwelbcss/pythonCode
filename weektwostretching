@@ -1,0 +1,17 @@
+phrase = input("Hello > ")
+if phrase == "hi" or phrase == "hello" or phrase == "hey":
+    print("Hello")
+elif phrase == "what is your name" or phrase == "what's your name" or phrase == "whats your name":
+    print("my name is chatbot")
+else:
+    print("I'm sorry, I don't know what " + phrase + " means.")
+input1 = input("What is your name? ")
+print("hello " + input1 + " , nice to meet you. I have a question for you.")
+input2 = input("How old is your dad? ")
+if input2 == "42":
+    print("correct")
+elif input2 > "45":
+    print("hahahaha, you think he is that old!")
+else:
+    print("no, that's not right.")
+print("Goodbye")
