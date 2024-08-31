@@ -1,0 +1,10 @@
+shopping = []
+
+how_many = int(input("How many items of shopping do you have? "))
+
+for item_number in range (how_many):
+    shopping.append(input("what is item " + str(item_number + 1) + "? "))
+print(shopping)
+
+print("you have " + str(how_many) + " items in your list")
+len(shopping)
